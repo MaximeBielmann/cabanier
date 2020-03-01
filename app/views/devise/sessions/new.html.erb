@@ -1,11 +1,13 @@
-<div class="container">
-        <div class="row">
-            <div class="col-2">
+<div class="container container-signin">
+        <div class="row signin">
+            <div class="col-md-4 col-sm-12">
                 
             </div>
-            <div class="col-8">
+            <div class="col-md-4 col-sm-12">
               
-                <h2>Se connecter</h2>
+                <%= image_tag("logo.png", width: '100%', class: 'logo-signin') %>
+                
+                <h1 class="text-center">Se connecter</h1>
 
                 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
                 <div class="field">
@@ -26,7 +28,7 @@
                 <% end %>
               
                 <div class="actions">
-                  <%= f.submit "Se connecter", class: "btn-get-started scrollto" %>
+                  <%= f.submit "Se connecter", class: "btn btn-primary btn-block" %>
                 </div>
               <% end %>
               

@@ -14,3 +14,35 @@
 
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+@import "signin";
+
+a, label {
+    color: #313c11;
+}
+
+a:hover {
+    color: #6b7c31;
+    text-decoration: none;
+}
+
+.btn {
+    background-color:  #313c11;
+    border-color :  #313c11;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    background-color:  #6b7c31 !important;
+    border-color :  #6b7c31 !important;
+    box-shadow: none !important;
+}
+
+.form-control {
+    border: 1px solid #313c11;
+}
+
+.form-control:focus {
+    border-color: #6b7c31;
+    box-shadow: none;
+}
